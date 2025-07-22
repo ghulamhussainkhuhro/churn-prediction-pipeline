@@ -1,6 +1,6 @@
 #  Churn Prediction Pipeline
 
-This project implements an end-to-end machine learning pipeline to predict customer churn using the [Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn). The entire workflow is built with **Scikit-learn Pipeline API** and includes preprocessing, training, hyperparameter tuning, model saving, and testing.
+This project implements an end-to-end machine learning pipeline to predict customer churn using the [Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn){:target="_blank"}. The entire workflow is built with **Scikit-learn Pipeline API** and includes preprocessing, training, hyperparameter tuning, model saving, and testing.
 
 ---
 
@@ -74,61 +74,44 @@ churn-prediction-pipeline/
   }
 ````
 
-* **Accuracy**: 0.8038
-* **F1 Score**: 0.6080
+* **Accuracy**: 0.8038  
+* **F1 Score**: 0.6080  
 
-> Note: Hyperparameter tuning showed comparable performance, validating robustness of the initial pipeline.
+> The initial pipeline demonstrated strong performance. Hyperparameter tuning yielded similar results, confirming the model's robustness.
 
 ---
 
-##  Reproducibility
-
-### 1. Clone the repo
+## 🔁 Reproducibility
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/ghulamhussainkhuhro/churn-prediction-pipeline.git
 cd churn-prediction-pipeline
-```
 
-### 2. Setup virtual environment
-
-```bash
+# 2. Create and activate a virtual environment
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate   # On Windows
 pip install -r requirements.txt
-```
 
-### 3. Run training
-
-```bash
+# 3. Train the model
 python pipeline/train.py
-```
 
-### 4. Run tuning
-
-```bash
+# 4. Perform hyperparameter tuning
 python pipeline/tune.py
-```
 
-### 5. Load & test pipeline
-
-```bash
+# 5. Load and test the pipeline
 python test_loaded_pipeline.py
 python test_tuned_pipeline.py
-```
+
+## 📘 Key Learnings
+
+- Constructing ML pipelines using `Pipeline` and `ColumnTransformer`  
+- Performing hyperparameter tuning with `GridSearchCV`  
+- Persisting models with `joblib` for reuse  
+- Evaluating models using **Accuracy** and **F1 Score**  
 
 ---
 
-##  Key Learnings
+## 📬 Contact
 
-* Building production-ready ML pipelines using `Pipeline`, `ColumnTransformer`
-* Hyperparameter tuning with `GridSearchCV`
-* Model export with `joblib` for reuse
-* Evaluation using **Accuracy** and **F1 Score**
-
----
-
-##  Contact
-
-For queries or suggestions, reach out on [LinkedIn](https://www.linkedin.com).
-
+For questions or suggestions, feel free to connect on [LinkedIn](https://www.linkedin.com/ghulamhussainkhuhro).
