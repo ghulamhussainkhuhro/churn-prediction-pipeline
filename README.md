@@ -74,6 +74,8 @@ churn-prediction-pipeline/
   }
 ````
 
+---
+
 * **Accuracy**: 0.8038  
 * **F1 Score**: 0.6080  
 
@@ -115,3 +117,5 @@ python test_tuned_pipeline.py
 ## 📬 Contact
 
 For questions or suggestions, feel free to connect on [LinkedIn](https://www.linkedin.com/ghulamhussainkhuhro).
+
+---
